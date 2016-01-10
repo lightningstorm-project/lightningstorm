@@ -30,4 +30,4 @@ Today, the most available form is the Internet, but a DVD, a pendrive or even a 
 
 Each medium can have more than one form of transmitting raindrops.
 
-For instance, a node running inside a mobile phone can use the Dropbox app to share some raindrops. In this case, the other end only need to support HTTP to obtain these raindrops.
+For instance, a node running on a mobile phone can use the Dropbox app to share some raindrops. In this case, the other end only need to support HTTP to obtain these raindrops.
