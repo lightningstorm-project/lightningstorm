@@ -20,6 +20,17 @@ A raindrop is a data representation to be sent between nodes.
 
 A raindrop has its metadata information together with the data payload.
 
+#### Minimal raindrop example
+
+```json
+{
+    "uuid": "548c1444-639b-55f0-97fe-227f982c58cb",
+    "payload": "Hello World!"
+}
+```
+
+A raindrop just needs to have a UUID and a payload.
+
 ### Atmosphere - Transmission medium
 
 Raindrops will be sent through a medium.
