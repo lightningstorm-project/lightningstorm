@@ -2,6 +2,10 @@
 
 A peer-to-peer transmission and cloud storage meta-protocol
 
+## Code / Exmaples
+
+* Python implementation: https://github.com/lightningstorm-project/python-lightningstorm
+
 ## Motivation
 
 A way to share information between two or more people by using one or more personal sharing nodes.
@@ -20,13 +24,22 @@ A raindrop is a data representation to be sent between nodes.
 
 A raindrop has its metadata information together with the data payload.
 
+#### Features:
+* immutable (UUID4 for unique identification)
+* serializable (MIME, JSON, ...)
+* extensible (with custom headers)
+
 #### Minimal raindrop example
 
-```json
-{
-    "uuid": "548c1444-639b-55f0-97fe-227f982c58cb",
-    "payload": "Hello World!"
-}
+Serialized in MIME/"HTTP-like" message format
+
+```HTTP
+UUID: e96e58c7-0df4-4bb0-9b28-c90e5de940bb
+Created-Date: 2020-03-22T03:27:33.798618+00:00
+Content-Type: application/octet-stream
+Content-Lenght: 20
+
+any binary payload��
 ```
 
 A raindrop just needs to have a UUID and a payload.
